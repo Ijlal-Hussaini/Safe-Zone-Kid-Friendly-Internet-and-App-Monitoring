@@ -8,7 +8,32 @@ SafeZone is a comprehensive native Android parental control application that hel
 
 ## 📱 Screenshots
 
-> Add screenshots of your app here
+<table>
+  <tr>
+    <td><img src="screenshots/screenshot1.png" alt="Login Screen" width="200"/></td>
+    <td><img src="screenshots/screenshot2.png" alt="Parent Dashboard" width="200"/></td>
+    <td><img src="screenshots/screenshot3.png" alt="Child Dashboard" width="200"/></td>
+    <td><img src="screenshots/screenshot4.png" alt="App Blocking" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Login Screen</b></td>
+    <td align="center"><b>Parent Dashboard</b></td>
+    <td align="center"><b>Child Dashboard</b></td>
+    <td align="center"><b>App Blocking</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/screenshot5.png" alt="Screen Time" width="200"/></td>
+    <td><img src="screenshots/screenshot6.png" alt="Location Tracking" width="200"/></td>
+    <td><img src="screenshots/screenshot7.png" alt="Alerts" width="200"/></td>
+    <td><img src="screenshots/screenshot8.png" alt="Activity Logs" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Screen Time Settings</b></td>
+    <td align="center"><b>Location Tracking</b></td>
+    <td align="center"><b>Alerts</b></td>
+    <td align="center"><b>Activity Logs</b></td>
+  </tr>
+</table>
 
 ## ✨ Key Features
 

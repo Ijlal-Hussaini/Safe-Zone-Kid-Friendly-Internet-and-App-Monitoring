@@ -10,40 +10,40 @@ SafeZone is a comprehensive native Android parental control application that hel
 
 <table>
   <tr>
-    <td><img src="screenshots/screenshot1.jpeg" alt="Login Screen" width="200"/></td>
-    <td><img src="screenshots/screenshot2.jpeg" alt="Role Selection" width="200"/></td>
-    <td><img src="screenshots/screenshot3.jpeg" alt="Registration" width="200"/></td>
+    <td><img src="screenshots/screenshot1.jpeg" alt="Role Selection" width="200"/></td>
+    <td><img src="screenshots/screenshot2.jpeg" alt="Login Screen" width="200"/></td>
+    <td><img src="screenshots/screenshot3.jpeg" alt="Child Monitoring" width="200"/></td>
     <td><img src="screenshots/screenshot4.jpeg" alt="Parent Dashboard" width="200"/></td>
   </tr>
   <tr>
-    <td align="center"><b>Login Screen</b></td>
     <td align="center"><b>Role Selection</b></td>
-    <td align="center"><b>Registration</b></td>
+    <td align="center"><b>Login Screen</b></td>
+    <td align="center"><b>Child Monitoring</b></td>
     <td align="center"><b>Parent Dashboard</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/screenshot5.jpeg" alt="Child Dashboard" width="200"/></td>
-    <td><img src="screenshots/screenshot6.jpeg" alt="QR Code Linking" width="200"/></td>
-    <td><img src="screenshots/screenshot7.jpeg" alt="App Blocking" width="200"/></td>
-    <td><img src="screenshots/screenshot8.jpeg" alt="Screen Time Settings" width="200"/></td>
+    <td><img src="screenshots/screenshot5.jpeg" alt="Screen Time Settings" width="200"/></td>
+    <td><img src="screenshots/screenshot6.jpeg" alt="Activity Logs" width="200"/></td>
+    <td><img src="screenshots/screenshot7.jpeg" alt="Location Tracking" width="200"/></td>
+    <td><img src="screenshots/screenshot8.jpeg" alt="Child Dashboard" width="200"/></td>
   </tr>
   <tr>
-    <td align="center"><b>Child Dashboard</b></td>
-    <td align="center"><b>QR Code Linking</b></td>
-    <td align="center"><b>App Blocking</b></td>
     <td align="center"><b>Screen Time Settings</b></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/screenshot9.jpeg" alt="Location Tracking" width="200"/></td>
-    <td><img src="screenshots/screenshot10.jpeg" alt="Alerts" width="200"/></td>
-    <td><img src="screenshots/screenshot12.jpeg" alt="Activity Logs" width="200"/></td>
-    <td><img src="screenshots/screenshot13.jpeg" alt="Settings" width="200"/></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Location Tracking</b></td>
-    <td align="center"><b>Alerts</b></td>
     <td align="center"><b>Activity Logs</b></td>
-    <td align="center"><b>Settings</b></td>
+    <td align="center"><b>Location Tracking</b></td>
+    <td align="center"><b>Child Dashboard</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/screenshot9.jpeg" alt="Device Linking QR" width="200"/></td>
+    <td><img src="screenshots/screenshot10.jpeg" alt="Content Filtering" width="200"/></td>
+    <td><img src="screenshots/screenshot12.jpeg" alt="Edit Profile" width="200"/></td>
+    <td><img src="screenshots/screenshot13.jpeg" alt="Request Extra Time" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Device Linking</b></td>
+    <td align="center"><b>Content Filtering</b></td>
+    <td align="center"><b>Edit Profile</b></td>
+    <td align="center"><b>Requeest Extra Time</b></td>
   </tr>
 </table>
 

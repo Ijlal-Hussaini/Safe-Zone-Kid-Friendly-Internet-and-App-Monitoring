@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet Permissions for Firebase -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Camera Permission for QR Scanning -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <!-- ============ PHASE 5: PERMISSIONS ============ -->
+
+    <!-- Foreground Service Permissions -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+
+    <!-- Usage Stats Permission (for Activity Monitoring) -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Notification Permission (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Query All Packages (to get app names) -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <!-- System Alert Window (for blocking overlays) -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Kill Background Processes (for app blocking) -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <!-- ============ PHASE 6: LOCATION PERMISSIONS ============ -->
+
+    <!-- Location Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"
+        android:maxSdkVersion="32" />
+
+    <!-- ============ PHASE 7: STORAGE PERMISSIONS (for PDF & Photos) ============ -->
+
+    <!-- Storage Permissions for PDF generation and photo upload -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- ============ PHASE 8: ADVANCED BLOCKING PERMISSIONS ============ -->
+
+    <!-- Accessibility Service Permission (for website blocking) -->
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Device Admin Permission (prevent uninstallation) -->
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- ============ AUTO-START ON BOOT PERMISSIONS ============ -->
+
+    <!-- Boot Completed Permission (auto-start services after restart) -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Wake Lock (keep services running) -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".SafeZoneApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SafeZone"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- ============ PHASE 6: GOOGLE MAPS API KEY ============ -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBrzGoiYbqi58g2btHRpZGGRhRQXIX0SQY" />
+
+        <!-- ============ ACTIVITIES ============ -->
+
+        <!-- Splash Screen (Launcher Activity) -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SafeZone.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Role Selection Activity -->
+        <activity
+            android:name=".activities.RoleSelectionActivity"
+            android:exported="false" />
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Email Verification Info Activity -->
+        <activity
+            android:name=".activities.EmailVerificationInfoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Forgot Password Activity -->
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Parent Dashboard Activity -->
+        <activity
+            android:name=".activities.ParentDashboardActivity"
+            android:exported="false" />
+
+        <!-- Add Child Activity -->
+        <activity
+            android:name=".activities.AddChildActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Child Details Activity -->
+        <activity
+            android:name=".activities.ChildDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Child Dashboard Activity -->
+        <activity
+            android:name=".activities.ChildDashboardActivity"
+            android:exported="false" />
+
+        <!-- QR Scanner Activity -->
+        <activity
+            android:name=".activities.QRScannerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Activity Logs Activity -->
+        <activity
+            android:name=".activities.ActivityLogsActivity"
+            android:exported="false" />
+
+        <!-- Screen Time Settings Activity -->
+        <activity
+            android:name=".activities.ScreenTimeSettingsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Content Filter Activity -->
+        <activity
+            android:name=".activities.ContentFilterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- ============ PHASE 6: LOCATION & ALERTS ============ -->
+
+        <!-- Location Map Activity -->
+        <activity
+            android:name=".activities.LocationMapActivity"
+            android:exported="false" />
+
+        <!-- Alerts Activity -->
+        <activity
+            android:name=".activities.AlertsActivity"
+            android:exported="false" />
+
+        <!-- ============ PHASE 7: REPORTS & PROFILE MANAGEMENT ============ -->
+
+        <!-- Reports & Analytics Activity -->
+        <activity
+            android:name=".activities.ReportsActivity"
+            android:label="@string/reports"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Parent Profile Activity -->
+        <activity
+            android:name=".activities.ParentProfileActivity"
+            android:label="@string/edit_profile"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Child Profile Activity -->
+        <activity
+            android:name=".activities.ChildProfileActivity"
+            android:label="@string/edit_profile"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Settings Activity -->
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/settings"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- ============ PHASE 5: BACKGROUND SERVICES ============ -->
+
+        <!-- Activity Monitor Service -->
+        <service
+            android:name=".services.ActivityMonitorService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- Screen Time Enforcer Service -->
+        <service
+            android:name=".services.ScreenTimeEnforcerService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- ============ PHASE 6: LOCATION SERVICE ============ -->
+
+        <!-- Location Tracking Service -->
+        <service
+            android:name=".services.LocationTrackingService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+        <!-- ============ PHASE 8: ADVANCED BLOCKING SERVICES ============ -->
+
+        <!-- App Blocking Service -->
+        <service
+            android:name=".services.AppBlockingService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- Website Blocking Service (Accessibility Service) -->
+        <service
+            android:name=".services.WebsiteBlockingService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- App Blocking Service (Accessibility Service) - INSTANT BLOCKING -->
+        <service
+            android:name=".services.AppBlockingAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/app_blocking_accessibility_config" />
+        </service>
+
+        <!-- Parent Notification Service (for real-time notifications) -->
+        <service
+            android:name=".services.ParentNotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- Device Admin Receiver -->
+        <receiver
+            android:name=".receivers.SafeZoneDeviceAdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_policy" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Boot Receiver - Auto-start services after device restart -->
+        <receiver
+            android:name=".receivers.BootReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="true">
+            <intent-filter android:priority="1000">
+                <!-- Standard boot completed -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- Quick boot (some devices) -->
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <!-- HTC quick boot -->
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+                <!-- App updated -->
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Service Restart Receiver - Watchdog to keep services running -->
+        <receiver
+            android:name=".receivers.ServiceRestartReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.safezone.app.RESTART_SERVICES" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Screen Time Lock Activity -->
+        <activity
+            android:name=".activities.ScreenTimeLockActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SafeZone"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+
+        <!-- Request Access Activity -->
+        <activity
+            android:name=".activities.RequestAccessActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Permissions Setup Activity -->
+        <activity
+            android:name=".activities.PermissionsSetupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- ============ PHASE 7: FILE PROVIDER (for PDF sharing & photos) ============ -->
+
+        <!-- FileProvider for PDF sharing and photo selection -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

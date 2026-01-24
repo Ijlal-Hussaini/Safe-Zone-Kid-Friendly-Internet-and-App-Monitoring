@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================== -->
+    <!-- SAFE ZONE - Professional Color Palette        -->
+    <!-- Dark Theme Colors                             -->
+    <!-- ============================================== -->
+
+    <!-- Primary Colors - Cyan Blue (Logo Color - Brighter for dark) -->
+    <color name="primary">#4DD0E1</color>
+    <color name="primary_dark">#26C6DA</color>
+    <color name="primary_light">#80DEEA</color>
+    <color name="primary_variant">#00BCD4</color>
+
+    <!-- Secondary Colors - Teal -->
+    <color name="secondary">#4DD0E1</color>
+    <color name="secondary_dark">#00ACC1</color>
+    <color name="secondary_light">#80DEEA</color>
+
+    <!-- Accent Color - Coral for highlights -->
+    <color name="accent">#FF8A8A</color>
+    <color name="accent_light">#FFABAB</color>
+
+    <!-- Background Colors - True Dark -->
+    <color name="background">#0D1117</color>
+    <color name="background_light">#161B22</color>
+    <color name="background_dark">#010409</color>
+    <color name="background_elevated">#1C2128</color>
+
+    <!-- Surface Colors -->
+    <color name="surface">#161B22</color>
+    <color name="surface_variant">#21262D</color>
+    <color name="card_background">#1C2128</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#F0F6FC</color>
+    <color name="text_secondary">#8B949E</color>
+    <color name="text_tertiary">#6E7681</color>
+    <color name="text_hint">#484F58</color>
+    <color name="text_disabled">#484F58</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_on_primary">#0D1117</color>
+    <color name="text_on_secondary">#0D1117</color>
+    <color name="text_on_error">#FFFFFF</color>
+    <color name="text_on_success">#0D1117</color>
+    <color name="text_on_warning">#0D1117</color>
+    <color name="text_input">#F0F6FC</color>
+    
+    <!-- Avatar/Icon Circle Background -->
+    <color name="avatar_background">#21262D</color>
+
+    <!-- Status Colors - Brighter for dark theme -->
+    <color name="success">#56D364</color>
+    <color name="success_light">#1B4332</color>
+    <color name="success_dark">#2E7D32</color>
+    <color name="warning">#E3B341</color>
+    <color name="warning_light">#3D2E00</color>
+    <color name="warning_dark">#E3B341</color>
+    <color name="error">#F85149</color>
+    <color name="error_light">#3D1418</color>
+    <color name="error_dark">#F85149</color>
+    <color name="info">#58A6FF</color>
+    <color name="info_light">#0D2240</color>
+    <color name="info_dark">#58A6FF</color>
+
+    <!-- Divider & Border -->
+    <color name="divider">#30363D</color>
+    <color name="border">#30363D</color>
+    <color name="border_focused">#4DD0E1</color>
+
+    <!-- Transparent Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black_10">#1AFFFFFF</color>
+    <color name="transparent_black_20">#33FFFFFF</color>
+    <color name="transparent_black_50">#80000000</color>
+    <color name="transparent_white_50">#80FFFFFF</color>
+    <color name="transparent_primary">#334DD0E1</color>
+
+    <!-- Material Design Defaults -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Role Colors -->
+    <color name="parent_color">#4DD0E1</color>
+    <color name="parent_color_light">#0D2A2E</color>
+    <color name="child_color">#4DD0E1</color>
+    <color name="child_color_light">#0D2A2E</color>
+
+    <!-- Chart Colors - Brighter for dark theme -->
+    <color name="chart_1">#4DD0E1</color>
+    <color name="chart_2">#80DEEA</color>
+    <color name="chart_3">#FFD54F</color>
+    <color name="chart_4">#CE93D8</color>
+    <color name="chart_5">#EF5350</color>
+    <color name="chart_6">#81C784</color>
+
+    <!-- Alert Colors -->
+    <color name="alert_unread">#0D2A2E</color>
+    <color name="alert_read">#1C2128</color>
+    <color name="alert_urgent">#3D1418</color>
+
+    <!-- Screen Time Colors -->
+    <color name="screen_time_text">#F0F6FC</color>
+    <color name="screen_time_remaining">#56D364</color>
+    <color name="screen_time_warning">#E3B341</color>
+    <color name="screen_time_exceeded">#F85149</color>
+
+    <!-- Toolbar & Navigation - Use primary color for toolbar in dark mode too -->
+    <color name="toolbar_background">#26C6DA</color>
+    <color name="toolbar_text">#FFFFFF</color>
+    <color name="nav_background">#161B22</color>
+    <color name="nav_selected">#4DD0E1</color>
+    <color name="nav_unselected">#8B949E</color>
+
+    <!-- Ripple & Touch Feedback -->
+    <color name="ripple_light">#1A4DD0E1</color>
+    <color name="ripple_dark">#334DD0E1</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#4DD0E1</color>
+    <color name="gradient_end">#26C6DA</color>
+
+    <!-- Shadow -->
+    <color name="shadow">#40000000</color>
+
+    <!-- Slider Colors -->
+    <color name="slider_track_inactive">#30363D</color>
+
+    <!-- Card stroke for dark theme -->
+    <color name="card_stroke">#30363D</color>
+    
+    <!-- Text on light colored backgrounds (info cards) - darker for contrast -->
+    <color name="text_on_primary_light">#004D54</color>
+
+</resources>

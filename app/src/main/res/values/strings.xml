@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Safe Zone</string>
+
+    <!-- Common -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="age">Age</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+
+    <!-- Authentication -->
+    <string name="welcome_to_safe_zone">Welcome to Safe Zone</string>
+    <string name="tagline">Keeping Kids Safe Online</string>
+    <string name="select_role">Select Your Role</string>
+    <string name="i_am_parent">I\'m a Parent</string>
+    <string name="i_am_child">I\'m a Child</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="enter_otp">Enter the 6-digit code sent to your email</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify">Verify</string>
+
+    <!-- Firebase Google Sign-In -->
+    <string name="default_web_client_id" translatable="false">5107850965-pqif6bg357vrceismplsgsvqlp6ppmqt.apps.googleusercontent.com</string>
+
+    <!-- Parent Dashboard -->
+    <string name="parent_dashboard">Parent Dashboard</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="my_children">My Children</string>
+    <string name="children">Children</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="reports">Reports</string>
+    <string name="profile">Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="add_child">Add Child</string>
+    <string name="no_children">No Children</string>
+    <string name="no_children_yet">No children linked yet</string>
+    <string name="add_your_first_child">Add your first child to start monitoring</string>
+    <string name="tap_add_to_link_child">Tap the + button to add and link a child</string>
+    <string name="view_details">View Details</string>
+
+    <!-- Add Child -->
+    <string name="add_child_subtitle">Create a profile and link your child\'s device</string>
+    <string name="child_name">Child\'s Name</string>
+    <string name="child_age">Child Age</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="qr_code">QR Code</string>
+    <string name="qr_code_expires_in">QR Code expires in:</string>
+    <string name="qr_instructions">Open the Safe Zone app on your child\'s device and scan this QR code</string>
+    <string name="scan_this_qr">Scan this QR code from child\'s device</string>
+    <string name="or_share_code">Or share this code:</string>
+    <string name="copy_code">Copy Code</string>
+    <string name="copy_link_code">Copy Link Code</string>
+
+    <!-- Child Dashboard -->
+    <string name="home">Home</string>
+    <string name="screen_time_remaining">Screen Time Remaining</string>
+    <string name="allowed_apps">Allowed Apps</string>
+    <string name="blocked_apps">Blocked Apps</string>
+    <string name="request_extra_time">Request Extra Time</string>
+    <string name="scan_parent_qr">Scan Parent\'s QR Code</string>
+    <string name="link_to_parent">Link to Parent Account</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="qr_scan_instructions">Point your camera at the QR code shown on parent\'s device</string>
+    <string name="or_enter_code_manually">Or enter code manually</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="link_code">Link Code</string>
+    <string name="verifying_code">Verifying code...</string>
+    <string name="not_linked_to_parent">Not Linked to Parent</string>
+    <string name="scan_qr_to_link">Scan the QR code from your parent\'s device to link your account</string>
+    <string name="all_apps_allowed">All apps are allowed</string>
+    <string name="need_more_time">Need More Time?</string>
+    <string name="request_extra_time_desc">Ask your parent for more screen time</string>
+    <string name="request">Request</string>
+    <string name="request_time">Request Time</string>
+    <string name="remove_child">Remove Child</string>
+
+    <!-- Activity Monitoring -->
+    <string name="activity_logs">Activity Logs</string>
+    <string name="app_usage">App Usage</string>
+    <string name="website_history">Website History</string>
+    <string name="no_activity_yet">No activity recorded yet</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="this_month">This Month</string>
+    <string name="all_time">All Time</string>
+    <string name="apps_used">Apps Used</string>
+    <string name="app_name_placeholder">App Name</string>
+    <string name="app_icon">App Icon</string>
+    <string name="duration">Duration</string>
+
+    <!-- Screen Time -->
+    <string name="screen_time_management">Screen Time Management</string>
+    <string name="set_daily_limit">Set Daily Limit</string>
+    <string name="daily_limit">Daily Limit</string>
+    <string name="minutes">minutes</string>
+    <string name="hours">hours</string>
+    <string name="enable_restrictions">Enable Restrictions</string>
+    <string name="schedule">Schedule</string>
+    <string name="screen_time_active">Screen Time Active</string>
+    <string name="monitoring_usage">Monitoring app usage</string>
+    <string name="enable_screen_time_desc">Control daily screen time usage</string>
+    <string name="set_daily_limit_desc">Set how many hours per day your child can use their device</string>
+
+    <!-- Content Filtering -->
+    <string name="content_filtering">Content Filtering</string>
+    <string name="blocked_websites">Blocked Websites</string>
+    <string name="add_website">Add Website</string>
+    <string name="website_url">Website URL</string>
+    <string name="block_app">Block App</string>
+    <string name="select_apps_to_block">Select apps to block</string>
+    <string name="add_blocked_app">Add App to Block</string>
+    <string name="add">Add</string>
+    <string name="no_blocked_apps">No blocked apps yet</string>
+    <string name="no_blocked_websites">No blocked websites yet</string>
+    <string name="no_blocked_content">No blocked content yet</string>
+    <string name="blocked">Blocked</string>
+    <string name="add_blocked_content">Add Blocked Content</string>
+    <string name="block_website">Block Website</string>
+    <string name="enter_package_name">Enter app package name (e.g., com.whatsapp)</string>
+    <string name="enter_website">Enter website URL or domain</string>
+    <string name="package_name_hint">Package name</string>
+    <string name="website_hint">example.com</string>
+
+    <!-- Item Blocked Content -->
+    <string name="content_icon">Content Icon</string>
+    <string name="content_title">Content Title</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="remove">Remove</string>
+
+    <!-- Dialog Add Blocked Content -->
+    <string name="enter_value">Enter value</string>
+    <string name="example_package_name">e.g., com.example.app or example.com</string>
+
+    <!-- Location -->
+    <string name="location_tracking">Location Tracking</string>
+    <string name="current_location">Current Location</string>
+    <string name="location_history">Location History</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="refresh_location">Refresh Location</string>
+
+    <!-- Alerts -->
+    <string name="alerts">Alerts</string>
+    <string name="no_alerts">No alerts yet</string>
+    <string name="mark_as_read">Mark as Read</string>
+    <string name="alert_blocked_app">Attempted to access blocked app</string>
+    <string name="alert_screen_time">Screen time limit exceeded</string>
+    <string name="alert_location">Location update</string>
+
+    <!-- Reports & Analytics -->
+    <string name="usage_reports">Usage Reports</string>
+    <string name="daily_report">Daily Report</string>
+    <string name="weekly_report">Weekly Report</string>
+    <string name="export_pdf">Export as PDF</string>
+    <string name="total_usage">Total Usage</string>
+    <string name="top_apps">Top Apps</string>
+    <string name="blocked_attempts">Blocked Attempts</string>
+    <string name="daily_usage">Daily Usage</string>
+    <string name="weekly_usage">Weekly Usage</string>
+    <string name="export_report">Export Report</string>
+    <string name="share_report">Share Report</string>
+    <string name="no_data_available">No data available</string>
+    <string name="select_child">Select Child</string>
+    <string name="time_range">Time Range</string>
+    <string name="last_7_days">Last 7 Days</string>
+    <string name="last_14_days">Last 14 Days</string>
+    <string name="last_30_days">Last 30 Days</string>
+
+    <!-- Profile Management -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="remove_photo">Remove Photo</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="profile_updated">Profile updated successfully</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="password_changed">Password changed successfully</string>
+    <string name="account_deleted">Account deleted successfully</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="device_nickname">Device Nickname</string>
+    <string name="linked_parent">Linked Parent</string>
+    <string name="screen_time_limit">Screen Time Limit</string>
+    <string name="usage_statistics">Usage Statistics</string>
+    <string name="restricted_content">Restricted Content</string>
+
+    <!-- Settings -->
+    <string name="app_version">App Version</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="realtime_alerts">Real-time Alerts</string>
+    <string name="account">Account</string>
+    <string name="preferences">Preferences</string>
+    <string name="danger_zone">Danger Zone</string>
+    <string name="confirm_password_title">Confirm Password</string>
+    <string name="enter_password_to_delete">Enter your password to delete account</string>
+    <string name="about_safe_zone">About Safe Zone</string>
+    <string name="credits">Credits</string>
+
+    <!-- Notifications -->
+    <string name="safe_zone_active">Safe Zone Active</string>
+    <string name="screen_time_warning">Screen Time Warning</string>
+    <string name="minutes_remaining">%d minutes remaining today</string>
+    <string name="screen_time_limit_reached">Screen time limit reached</string>
+    <string name="daily_limit_exceeded">Daily limit of %d minutes exceeded</string>
+
+    <!-- Services -->
+    <string name="activity_monitoring">Activity Monitoring</string>
+    <string name="screen_time_enforcement">Screen Time Enforcement</string>
+    <string name="monitoring_app_usage">Monitors app usage for parental control</string>
+    <string name="enforces_screen_time">Enforces screen time limits</string>
+
+    <!-- Messages -->
+    <string name="loading">Loading...</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="success">Success!</string>
+    <string name="error">Error</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="try_again">Try Again</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+    <!-- Validation -->
+    <string name="error_empty_email">Email is required</string>
+    <string name="error_invalid_email">Please enter a valid email address</string>
+    <string name="error_empty_password">Password is required</string>
+    <string name="error_weak_password">Password must be at least 8 characters with one letter and one number</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_empty_name">Name is required</string>
+    <string name="error_invalid_otp">Invalid OTP. Please enter 6 digits</string>
+    <string name="error_empty_age">Age is required for child accounts</string>
+    <string name="error_invalid_age">Age must be between 1 and 18</string>
+
+    <!-- Permissions -->
+    <string name="permission_location">Location permission is required for tracking</string>
+    <string name="permission_camera">Camera permission is required for QR scanning</string>
+    <string name="permission_storage">Storage permission is required</string>
+    <string name="grant_permission">Grant Permission</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_description">Safe Zone uses this service to monitor and block restricted websites in browsers. This helps parents protect their children from inappropriate content. No personal data is collected or shared.</string>
+
+    <!-- Accessibility Service Descriptions -->
+    <string name="app_blocking_service_description">Safe Zone uses this service to instantly block restricted apps and protect your child from inappropriate content. This service monitors app launches and immediately closes blocked apps.</string>
+
+    <!-- Screen Time Lock -->
+    <string name="screen_time_limit_reached_title">Screen Time Limit Reached</string>
+    <string name="screen_time_limit_reached_message">You have used all your screen time for today. Only allowed apps can be used now.</string>
+    <string name="request_more_time">Request More Time</string>
+    <string name="open_allowed_app">Open Allowed App</string>
+    <string name="time_resets_at_midnight">Time resets at midnight</string>
+    <string name="allowed_apps_when_limit">Allowed Apps (When Limit Reached)</string>
+    <string name="allowed_apps_desc">These apps will remain accessible even after screen time limit is reached</string>
+    <string name="add_allowed_app">Add Allowed App</string>
+    <string name="no_allowed_apps">No allowed apps configured</string>
+    <string name="select_allowed_apps">Select apps that can be used after limit</string>
+    <string name="phone_dialer">Phone Dialer</string>
+    <string name="emergency_apps">Emergency Apps</string>
+    <string name="used_today">Used Today</string>
+    <string name="remaining_today">Remaining Today</string>
+
+</resources>

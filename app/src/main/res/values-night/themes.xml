@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================== -->
+    <!-- SAFE ZONE - Professional Theme (Dark)         -->
+    <!-- ============================================== -->
+
+    <!-- Base application theme for Dark Mode -->
+    <style name="Base.Theme.SafeZone" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorPrimaryContainer">@color/primary_light</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorOnPrimaryContainer">@color/primary_light</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_dark</item>
+        <item name="colorSecondaryContainer">@color/secondary_light</item>
+        <item name="colorOnSecondary">@color/text_on_primary</item>
+
+        <!-- Tertiary color -->
+        <item name="colorTertiary">@color/accent</item>
+        <item name="colorOnTertiary">@color/text_on_primary</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/text_on_primary</item>
+        <item name="colorErrorContainer">@color/error_light</item>
+
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/nav_background</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <!-- Outline -->
+        <item name="colorOutline">@color/border</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Ripple -->
+        <item name="android:colorControlHighlight">@color/ripple_light</item>
+
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Main App Theme -->
+    <style name="Theme.SafeZone" parent="Base.Theme.SafeZone" />
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.SafeZone.Splash" parent="Theme.SafeZone">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Button Styles                                 -->
+    <!-- ============================================== -->
+
+    <style name="ButtonPrimary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <style name="ButtonSecondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <style name="ButtonText" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <style name="ButtonDanger" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/error</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Input Styles                                  -->
+    <!-- ============================================== -->
+
+    <style name="EditTextStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/border_focused</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="boxBackgroundColor">@color/surface_variant</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Card Styles                                   -->
+    <!-- ============================================== -->
+
+    <style name="CardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="contentPadding">16dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="CardStyleOutlined" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="strokeColor">@color/border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Toolbar Style                                 -->
+    <!-- ============================================== -->
+
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/toolbar_background</item>
+        <item name="titleTextColor">@color/toolbar_text</item>
+        <item name="subtitleTextColor">@color/toolbar_text</item>
+        <item name="android:elevation">0dp</item>
+        <item name="navigationIconTint">@color/toolbar_text</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Bottom Navigation Style                       -->
+    <!-- ============================================== -->
+
+    <style name="BottomNavStyle" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="android:background">@color/nav_background</item>
+        <item name="elevation">8dp</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemActiveIndicatorStyle">@style/BottomNavIndicator</item>
+    </style>
+
+    <style name="BottomNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/transparent_primary</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Text Styles                                   -->
+    <!-- ============================================== -->
+
+    <style name="TextHeading1">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="TextHeading2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="TextHeading3">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSubtitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextBody1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <style name="TextBody2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <style name="TextCaption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_tertiary</item>
+    </style>
+
+    <style name="TextLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- OTP Box Style                                 -->
+    <!-- ============================================== -->
+
+    <style name="OTPBox">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/otp_box_background</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Dialog Styles                                 -->
+    <!-- ============================================== -->
+
+    <style name="DialogStyle" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="dialogCornerRadius">20dp</item>
+        <item name="buttonBarPositiveButtonStyle">@style/DialogButtonPositive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/DialogButtonNegative</item>
+    </style>
+
+    <style name="DialogButtonPositive" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="DialogButtonNegative" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- Custom Dialog Theme Overlay for full custom layouts -->
+    <style name="ThemeOverlay_App_MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="dialogCornerRadius">24dp</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Switch Style                                  -->
+    <!-- ============================================== -->
+
+    <style name="SwitchStyle" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="thumbTint">@color/switch_thumb_color</item>
+        <item name="trackTint">@color/switch_track_color</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Chip Style                                    -->
+    <!-- ============================================== -->
+
+    <style name="ChipStyle" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="chipStrokeColor">@color/border</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">8dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- FAB Rounded Style -->
+    <style name="FabRounded" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- ============================================== -->
+    <!-- Popup Menu Style                              -->
+    <!-- ============================================== -->
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.Material3.Dark">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:dropDownVerticalOffset">8dp</item>
+        <item name="android:dropDownHorizontalOffset">-8dp</item>
+        <item name="android:popupElevation">8dp</item>
+        <item name="android:itemBackground">@drawable/popup_menu_item_background</item>
+    </style>
+
+    <style name="PopupMenuStyle" parent="Widget.Material3.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+
+</resources>

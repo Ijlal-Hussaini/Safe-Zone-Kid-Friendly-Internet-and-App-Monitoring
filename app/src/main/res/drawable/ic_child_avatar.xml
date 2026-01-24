@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Circular Background (Light Green - Child Theme) -->
+    <item android:drawable="@drawable/child_avatar_background" />
+    
+    <!-- Child Avatar Image - Positioned to fit properly -->
+    <item
+        android:drawable="@drawable/child_avatar"
+        android:gravity="center|bottom"
+        android:bottom="8dp"
+        android:width="68dp"
+        android:height="68dp" />
+</layer-list>

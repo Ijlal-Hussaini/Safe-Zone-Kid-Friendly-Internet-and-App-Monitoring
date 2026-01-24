@@ -10,28 +10,40 @@ SafeZone is a comprehensive native Android parental control application that hel
 
 <table>
   <tr>
-    <td><img src="screenshots/screenshot1.png" alt="Login Screen" width="200"/></td>
-    <td><img src="screenshots/screenshot2.png" alt="Parent Dashboard" width="200"/></td>
-    <td><img src="screenshots/screenshot3.png" alt="Child Dashboard" width="200"/></td>
-    <td><img src="screenshots/screenshot4.png" alt="App Blocking" width="200"/></td>
+    <td><img src="screenshots/screenshot1.jpeg" alt="Login Screen" width="200"/></td>
+    <td><img src="screenshots/screenshot2.jpeg" alt="Role Selection" width="200"/></td>
+    <td><img src="screenshots/screenshot3.jpeg" alt="Registration" width="200"/></td>
+    <td><img src="screenshots/screenshot4.jpeg" alt="Parent Dashboard" width="200"/></td>
   </tr>
   <tr>
     <td align="center"><b>Login Screen</b></td>
+    <td align="center"><b>Role Selection</b></td>
+    <td align="center"><b>Registration</b></td>
     <td align="center"><b>Parent Dashboard</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/screenshot5.jpeg" alt="Child Dashboard" width="200"/></td>
+    <td><img src="screenshots/screenshot6.jpeg" alt="QR Code Linking" width="200"/></td>
+    <td><img src="screenshots/screenshot7.jpeg" alt="App Blocking" width="200"/></td>
+    <td><img src="screenshots/screenshot8.jpeg" alt="Screen Time Settings" width="200"/></td>
+  </tr>
+  <tr>
     <td align="center"><b>Child Dashboard</b></td>
+    <td align="center"><b>QR Code Linking</b></td>
     <td align="center"><b>App Blocking</b></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/screenshot5.png" alt="Screen Time" width="200"/></td>
-    <td><img src="screenshots/screenshot6.png" alt="Location Tracking" width="200"/></td>
-    <td><img src="screenshots/screenshot7.png" alt="Alerts" width="200"/></td>
-    <td><img src="screenshots/screenshot8.png" alt="Activity Logs" width="200"/></td>
-  </tr>
-  <tr>
     <td align="center"><b>Screen Time Settings</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/screenshot9.jpeg" alt="Location Tracking" width="200"/></td>
+    <td><img src="screenshots/screenshot10.jpeg" alt="Alerts" width="200"/></td>
+    <td><img src="screenshots/screenshot12.jpeg" alt="Activity Logs" width="200"/></td>
+    <td><img src="screenshots/screenshot13.jpeg" alt="Settings" width="200"/></td>
+  </tr>
+  <tr>
     <td align="center"><b>Location Tracking</b></td>
     <td align="center"><b>Alerts</b></td>
     <td align="center"><b>Activity Logs</b></td>
+    <td align="center"><b>Settings</b></td>
   </tr>
 </table>
 

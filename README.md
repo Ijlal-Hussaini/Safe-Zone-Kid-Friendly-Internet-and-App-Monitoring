@@ -10,7 +10,7 @@ SafeZone is a comprehensive native Android parental control application that hel
 
 **Ready to test SafeZone?** Download the latest APK and install it on your Android device:
 
-👉 **[Download SafeZone.apk](releases/SafeZone.apk)**
+👉 **[Download SafeZone.apk](https://github.com/Ijlal-Hussaini/Safe-Zone-Kid-Friendly-Internet-and-App-Monitoring/raw/main/releases/SafeZone.apk)**
 
 For installation instructions, see the [releases folder](releases/).
 

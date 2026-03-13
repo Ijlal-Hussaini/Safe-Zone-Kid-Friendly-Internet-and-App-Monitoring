@@ -6,6 +6,14 @@
 
 SafeZone is a comprehensive native Android parental control application that helps parents monitor and manage their children's smartphone usage in real-time. Built with Firebase backend, it provides instant app blocking, website filtering, screen time management, location tracking, and real-time alerts.
 
+## 📥 Download APK
+
+**Ready to test SafeZone?** Download the latest APK and install it on your Android device:
+
+👉 **[Download SafeZone.apk](releases/SafeZone.apk)**
+
+For installation instructions, see the [releases folder](releases/).
+
 ## 📱 Screenshots
 
 <table>

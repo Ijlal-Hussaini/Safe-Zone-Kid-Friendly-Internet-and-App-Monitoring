@@ -40,6 +40,9 @@ render.experimental.xml
 *.aab
 output-metadata.json
 
+# Allow APK files in releases folder for distribution
+!releases/*.apk
+
 # Keystore files
 *.jks
 *.keystore

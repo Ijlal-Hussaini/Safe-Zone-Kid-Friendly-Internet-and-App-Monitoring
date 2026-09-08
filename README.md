@@ -20,7 +20,6 @@
 Ready to test SafeZone on your Android phone?
 
 👉 **[Download SafeZone.apk (v1.0 Production Package)](https://github.com/Ijlal-Hussaini/Safe-Zone-Kid-Friendly-Internet-and-App-Monitoring/raw/main/releases/SafeZone.apk)**  
-*(Also hosted live on [ijlalhussain.vercel.app/downloads/SafeZone.apk](https://ijlalhussain.vercel.app/downloads/SafeZone.apk))*
 
 ### 🚀 Quick Install Instructions:
 1. Download `SafeZone.apk` on your Android device (Android 7.0+ / API 24+).

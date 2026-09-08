@@ -1,311 +1,209 @@
-# 🛡️ SafeZone - Parental Control Android Application
+# 🛡️ SafeZone — Parental Control & Digital Safety Android Application
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://www.android.com/)
-[![API](https://img.shields.io/badge/API-24%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=24)
+<div align="center">
+  <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Platform" />
+  <img src="https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Language" />
+  <img src="https://img.shields.io/badge/Backend-Firebase_Realtime_DB-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+  <img src="https://img.shields.io/badge/Maps-Google_Maps_SDK-4285F4?style=for-the-badge&logo=google-maps&logoColor=white" alt="Google Maps" />
+  <img src="https://img.shields.io/badge/Min_SDK-API_24_(Android_7.0)-brightgreen?style=for-the-badge" alt="API Level" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License" />
+</div>
 
-SafeZone is a comprehensive native Android parental control application that helps parents monitor and manage their children's smartphone usage in real-time. Built with Firebase backend, it provides instant app blocking, website filtering, screen time management, location tracking, and real-time alerts.
+<br/>
 
-## 📥 Download APK
-
-**Ready to test SafeZone?** Download the latest APK and install it on your Android device:
-
-👉 **[Download SafeZone.apk](https://github.com/Ijlal-Hussaini/Safe-Zone-Kid-Friendly-Internet-and-App-Monitoring/raw/main/releases/SafeZone.apk)**
-
-For installation instructions, see the [releases folder](releases/).
-
-## 📱 Screenshots
-
-<table>
-  <tr>
-    <td><img src="screenshots/screenshot1.jpeg" alt="Role Selection" width="200"/></td>
-    <td><img src="screenshots/screenshot2.jpeg" alt="Login Screen" width="200"/></td>
-    <td><img src="screenshots/screenshot3.jpeg" alt="Child Monitoring" width="200"/></td>
-    <td><img src="screenshots/screenshot4.jpeg" alt="Parent Dashboard" width="200"/></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Role Selection</b></td>
-    <td align="center"><b>Login Screen</b></td>
-    <td align="center"><b>Child Monitoring</b></td>
-    <td align="center"><b>Parent Dashboard</b></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/screenshot5.jpeg" alt="Screen Time Settings" width="200"/></td>
-    <td><img src="screenshots/screenshot6.jpeg" alt="Activity Logs" width="200"/></td>
-    <td><img src="screenshots/screenshot7.jpeg" alt="Location Tracking" width="200"/></td>
-    <td><img src="screenshots/screenshot8.jpeg" alt="Child Dashboard" width="200"/></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Screen Time Settings</b></td>
-    <td align="center"><b>Activity Logs</b></td>
-    <td align="center"><b>Location Tracking</b></td>
-    <td align="center"><b>Child Dashboard</b></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/screenshot9.jpeg" alt="Device Linking QR" width="200"/></td>
-    <td><img src="screenshots/screenshot10.jpeg" alt="Content Filtering" width="200"/></td>
-    <td><img src="screenshots/screenshot12.jpeg" alt="Edit Profile" width="200"/></td>
-    <td><img src="screenshots/screenshot13.jpeg" alt="Request Extra Time" width="200"/></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Device Linking</b></td>
-    <td align="center"><b>Content Filtering</b></td>
-    <td align="center"><b>Edit Profile</b></td>
-    <td align="center"><b>Requeest Extra Time</b></td>
-  </tr>
-</table>
-
-## ✨ Key Features
-
-### 👨‍👩‍👧‍👦 For Parents
-- **Real-time Monitoring** - Track children's app usage and activity logs
-- **App Blocking** - Instantly block inappropriate apps with dual-layer enforcement
-- **Website Filtering** - Block harmful websites across all major browsers
-- **Screen Time Management** - Set daily usage limits with customizable allowed apps
-- **Location Tracking** - View child's real-time location on Google Maps
-- **Instant Alerts** - Receive push notifications for blocked attempts and limit violations
-- **Multiple Children** - Manage multiple children from a single parent account
-- **Activity Reports** - View detailed usage analytics and reports
-
-### 👶 For Children
-- **Safe Browsing** - Automatic blocking of inappropriate content
-- **Time Management** - Learn healthy device usage habits
-- **Request Access** - Request additional screen time from parents
-- **Emergency Access** - Always-allowed apps (Phone, Contacts, Emergency)
-
-## 🏗️ Architecture & Technology Stack
-
-### Platform
-- **Language**: Java
-- **Minimum SDK**: API 24 (Android 7.0)
-- **Target SDK**: API 34 (Android 14)
-- **Architecture**: MVVM-like with Repository Pattern
-
-### Backend & Services
-- **Firebase Realtime Database** - Real-time data synchronization
-- **Firebase Authentication** - Secure user authentication with email verification
-- **Firebase Storage** - Profile photo storage
-- **Google Maps SDK** - Location tracking and visualization
-- **ZXing Library** - QR code generation and scanning
-
-### Key Android Components
-- Foreground Services for continuous monitoring
-- Accessibility Service for instant app/website blocking
-- UsageStatsManager for app usage tracking
-- FusedLocationProviderClient for battery-efficient location
-- Device Admin API for uninstall prevention
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Android Studio Arctic Fox or later
-- Android device/emulator running Android 7.0 (API 24) or higher
-- Firebase account
-- Google Maps API key
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Ijlal-Hussaini/Safe-Zone-Kid-Friendly-Internet-and-App-Monitoring.git
-   cd Safe-Zone-Kid-Friendly-Internet-and-App-Monitoring
-   ```
-
-2. **Set up Firebase**
-   - Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/)
-   - Add an Android app to your Firebase project
-   - Download `google-services.json`
-   - Place it in the `app/` directory
-
-3. **Configure Firebase Authentication**
-   - Enable Email/Password authentication in Firebase Console
-   - Configure email verification settings
-
-4. **Set up Firebase Realtime Database**
-   - Create a Realtime Database in your Firebase project
-   - Set up security rules (see [Security Rules](#security-rules) section)
-
-5. **Add Google Maps API Key**
-   - Get an API key from [Google Cloud Console](https://console.cloud.google.com/)
-   - Add it to `AndroidManifest.xml`:
-     ```xml
-     <meta-data
-         android:name="com.google.android.geo.API_KEY"
-         android:value="YOUR_API_KEY_HERE" />
-     ```
-
-6. **Build and Run**
-   ```bash
-   ./gradlew assembleDebug
-   ```
-   Or use Android Studio's Run button
-
-## 📖 How It Works
-
-### Parent-Child Linking
-1. Parent creates account and generates QR code
-2. Child creates account and scans parent's QR code
-3. Bidirectional link established in Firebase
-4. Parent can now monitor and control child's device
-
-### App Blocking (Dual-Layer Architecture)
-- **Layer 1**: Accessibility Service detects app launch instantly
-- **Layer 2**: Background polling (50ms intervals) as backup
-- Blocked apps are closed before they fully open
-- Parent receives instant alert notification
-
-### Screen Time Enforcement
-- Tracks actual device usage time (not wall clock)
-- Resets when parent enables/changes limit
-- Warning notification at 5 minutes remaining
-- Device locks when limit exceeded
-- Allowed apps remain accessible
-
-### Website Blocking
-- Monitors browser URL bars via Accessibility Service
-- Supports Chrome, Firefox, Opera, Brave, Edge, Samsung Browser
-- Domain matching with subdomain support
-- Instant blocking with back navigation
-
-## 🔐 Security & Privacy
-
-### Security Features
-- ✅ Email verification required for all accounts
-- ✅ Role-based access control (Parent/Child)
-- ✅ Password strength validation
-- ✅ Device Admin prevents unauthorized uninstallation
-- ✅ QR codes expire in 10 minutes
-- ✅ Firebase Security Rules protect data access
-
-### Security Rules
-```json
-{
-  "rules": {
-    "users": {
-      "$uid": {
-        ".read": "$uid === auth.uid || (parent-child relationship exists)",
-        ".write": "$uid === auth.uid",
-        "screenTimeRules": {
-          ".write": "(parent can write to child's rules)"
-        }
-      }
-    }
-  }
-}
-```
-
-### Privacy Considerations
-- All data stored securely in Firebase
-- Location data only accessible to linked parent
-- No third-party data sharing
-- Parents can only access their linked children's data
-
-## 📋 Required Permissions
-
-### Child Device Permissions
-| Permission | Purpose |
-|------------|---------|
-| `PACKAGE_USAGE_STATS` | Monitor app usage statistics |
-| `BIND_ACCESSIBILITY_SERVICE` | Instant app/website blocking |
-| `SYSTEM_ALERT_WINDOW` | Display blocking dialogs |
-| `BIND_DEVICE_ADMIN` | Prevent app uninstallation |
-| `ACCESS_FINE_LOCATION` | Track device location |
-| `ACCESS_BACKGROUND_LOCATION` | Location updates in background |
-| `FOREGROUND_SERVICE` | Keep monitoring services running |
-| `RECEIVE_BOOT_COMPLETED` | Auto-start after device restart |
-
-## 🗂️ Project Structure
-
-```
-app/src/main/java/com/safezone/app/
-├── activities/          # UI Activities
-│   ├── LoginActivity.java
-│   ├── ParentDashboardActivity.java
-│   ├── ChildDashboardActivity.java
-│   └── ...
-├── adapters/           # RecyclerView Adapters
-├── fragments/          # Reusable UI Fragments
-├── models/             # Data Models
-│   ├── User.java
-│   ├── Alert.java
-│   └── ...
-├── services/           # Background Services
-│   ├── ActivityMonitorService.java
-│   ├── AppBlockingService.java
-│   ├── LocationTrackingService.java
-│   └── ...
-├── receivers/          # Broadcast Receivers
-├── utils/              # Helper Classes
-│   ├── FirebaseHelper.java
-│   ├── NotificationHelper.java
-│   └── ...
-└── SafeZoneApplication.java
-```
-
-## 🧪 Testing
-
-The app has been tested on:
-- Multiple Android versions (7.0 to 14)
-- Various manufacturers (Samsung, Xiaomi, OnePlus, Google Pixel)
-- Different screen sizes and resolutions
-- Edge cases (device restart, network loss, battery optimization)
-
-## 🐛 Known Limitations
-
-- **Android Only**: iOS version not available
-- **Browser Dependency**: Website blocking requires supported browsers
-- **Battery Impact**: Multiple foreground services consume battery
-- **Manufacturer Variations**: Some devices (Xiaomi, Huawei) aggressively kill background services
-- **Root Access**: Rooted devices may bypass restrictions
-
-## 🔮 Future Enhancements
-
-- [ ] Geofencing with safe zone alerts
-- [ ] Call and SMS monitoring
-- [ ] Social media content analysis
-- [ ] AI-powered inappropriate content detection
-- [ ] iOS version
-- [ ] Web dashboard for parents
-- [ ] Multi-parent support
-- [ ] Weekly/monthly usage reports
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Ijlal Hussain**
-- GitHub: [@Ijlal-Hussaini](https://github.com/Ijlal-Hussaini)
-- Email: ijlalhussainhussaini786@gmail.com
-
-## 🙏 Acknowledgments
-
-- Firebase for backend infrastructure
-- ZXing for QR code functionality
-- Google Maps for location services
-- Android Open Source Project
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-- Open an issue on GitHub
-- Email: ijlalhussainhussaini786@gmail.com
-
-## ⚠️ Disclaimer
-
-This application is designed for parental monitoring purposes only. Users must comply with local laws and regulations regarding privacy and monitoring. The developers are not responsible for misuse of this application.
+> **SafeZone** is an enterprise-grade, dual-mode native Android parental control system engineered to curate a safe digital environment for children. Developed as a **Final Year Project (FYP) at the National University of Modern Languages (NUML)**, the application operates via two synchronized interfaces: a comprehensive **Parent Management Hub** and a protected **Child Companion Monitor** running persistent background oversight.
 
 ---
 
-**Note**: This is a Final Year Project (FYP) developed as part of academic requirements. For detailed technical documentation, see [FYP Defense Document](docs/FYP_DEFENSE_DOCUMENT.md).
+## 📥 Direct APK Download & Quick Installation
+
+Ready to test SafeZone on your Android phone?
+
+👉 **[Download SafeZone.apk (v1.0 Production Package)](https://github.com/Ijlal-Hussaini/Safe-Zone-Kid-Friendly-Internet-and-App-Monitoring/raw/main/releases/SafeZone.apk)**  
+*(Also hosted live on [ijlalhussain.vercel.app/downloads/SafeZone.apk](https://ijlalhussain.vercel.app/downloads/SafeZone.apk))*
+
+### 🚀 Quick Install Instructions:
+1. Download `SafeZone.apk` on your Android device (Android 7.0+ / API 24+).
+2. Open the downloaded file and tap **Install** (Enable *"Install unknown apps"* if prompted).
+3. Open SafeZone, select your role (**Parent** or **Child**), and follow the on-screen pairing wizard.
+
+---
+
+## 📱 Application Screenshots & UI Sequence (1 to 15)
+
+<table>
+  <tr>
+    <td align="center" width="20%">
+      <img src="screenshots/01_Login_Signup.jpeg" alt="Login & Registration" width="100%"/>
+      <br/><b>1. Authentication</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/02_Parent_Dashboard.jpeg" alt="Parent Dashboard" width="100%"/>
+      <br/><b>2. Parent Hub</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/03_Adding_Child.jpeg" alt="Child Device Pairing" width="100%"/>
+      <br/><b>3. Device Pairing</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/04_Child_Monitoring.jpeg" alt="Child Monitoring" width="100%"/>
+      <br/><b>4. Real-Time Monitor</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/05_Screen_Time_Management.jpeg" alt="Screen Time Rules" width="100%"/>
+      <br/><b>5. Screen Time Caps</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="20%">
+      <img src="screenshots/06_Request_Extra_Time.jpeg" alt="Request Extra Time" width="100%"/>
+      <br/><b>6. Extra Time Request</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/07_Content_Filtering.jpeg" alt="Content Filtering" width="100%"/>
+      <br/><b>7. Web Content Filter</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/08_Activity_Logs.jpeg" alt="Activity Logs" width="100%"/>
+      <br/><b>8. Usage Analytics</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/09_Location_Tracking.jpeg" alt="Location Tracking" width="100%"/>
+      <br/><b>9. GPS Geolocation</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/10_Alerts_Notifications.jpeg" alt="Alerts & Logs" width="100%"/>
+      <br/><b>10. Security Alerts</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="20%">
+      <img src="screenshots/11_Child_Dashboard.jpeg" alt="Child Dashboard" width="100%"/>
+      <br/><b>11. Child Home Screen</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/12_Child_Request_Access.jpeg" alt="Child Request Dialog" width="100%"/>
+      <br/><b>12. Permission Request</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/13_Child_Profile.jpeg" alt="Child Profile" width="100%"/>
+      <br/><b>13. Child Profile</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/14_Parent_Profile.jpeg" alt="Parent Profile" width="100%"/>
+      <br/><b>14. Parent Profile</b>
+    </td>
+    <td align="center" width="20%">
+      <img src="screenshots/15_Parent_Settings.jpeg" alt="Parent Settings" width="100%"/>
+      <br/><b>15. Security Settings</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🌟 Key Functional Highlights
+
+### 👨‍👩‍👧‍👦 1. Parent Supervision Console
+- **Real-Time Multi-Child Hub**: Manage and supervise multiple child accounts and linked devices from a single centralized dashboard.
+- **Dual-Layer App Blocking**: Instantly restrict or block specific applications using a combination of Android `AccessibilityService` and `UsageStatsManager`.
+- **Dynamic Web Filtering**: Real-time URL interception blocking adult content, malicious domains, and custom blacklists across Google Chrome, Brave, and default browsers.
+- **Precision Screen Time Management**: Daily quota scheduler with custom weekday/weekend limits, sleep curfews, and emergency app whitelisting (Phone, Contacts, Emergency).
+- **Live GPS Tracking & Geofencing**: Real-time location rendering on Google Maps SDK with customizable safe zones and geofence exit alerts.
+- **Instant Push Security Alerts**: Automated alerts delivered upon curfew violations, restricted app launches, or geofence breaches.
+
+### 👶 2. Child Companion & Protection Mode
+- **Protected Kid Dashboard**: Intuitive interface displaying remaining daily screen time quota and permitted educational/entertainment apps.
+- **Extra Time Request Loop**: Interactive dialog allowing children to politely request additional screen time, triggering real-time approval prompts on the parent device.
+- **Emergency Safeguard**: Critical communication channels (Emergency SOS, Parent Dialer) remain permanently accessible even during active lock curfews.
+- **Anti-Tamper Protections**: Background foreground services and device admin policies prevent unauthorized service killing or uninstallation.
+
+---
+
+## 🏗️ Technical Architecture & Core Stack
+
+```mermaid
+graph TD
+    ParentApp[📱 Parent Dashboard App] <-->|Real-Time Sync| Firebase[(🔥 Firebase Realtime Database)]
+    ChildApp[📱 Child Companion App] <-->|Status & Location Updates| Firebase
+    ChildApp -->|URL & App Interception| Accessibility[⚙️ Android Accessibility Service]
+    ChildApp -->|App Duration Metrics| UsageStats[📊 Android UsageStatsManager]
+    ChildApp -->|Live Geopositioning| FusedLocation[📍 Google FusedLocationProviderClient]
+    ParentApp -->|Map Render| GoogleMaps[🗺️ Google Maps Android SDK]
+    ParentApp <-->|Pairing Handshake| ZXing[📷 ZXing QR Engine]
+```
+
+### 🛠️ Technology Specifications:
+- **Programming Language**: Java (100% Native Android)
+- **Minimum SDK Level**: Android 7.0 (API Level 24 - Nougat)
+- **Target SDK Level**: Android 14 (API Level 34 - Upside Down Cake)
+- **Backend & Cloud Services**: Firebase Realtime Database, Firebase Authentication, Firebase Cloud Storage
+- **Mapping & Location**: Google Play Services Location API (`FusedLocationProviderClient`), Google Maps Android SDK
+- **Pairing Engine**: ZXing Embedded (`com.journeyapps:zxing-android-embedded`)
+- **UI & Layout Engine**: Android Material Design Components, ConstraintLayout, CardView, RecyclerView
+
+---
+
+## 🔒 Android System Permissions & Capabilities
+
+SafeZone utilizes specialized Android system capabilities to ensure uninterrupted background protection:
+
+| Permission | Purpose |
+|:---|:---|
+| `BIND_ACCESSIBILITY_SERVICE` | Real-time browser URL inspection and restricted app overlay blocking |
+| `PACKAGE_USAGE_STATS` | Precise daily/weekly application launch count and duration telemetry |
+| `ACCESS_FINE_LOCATION` & `ACCESS_BACKGROUND_LOCATION` | Accurate GPS coordinates for geofencing and live parent map tracking |
+| `FOREGROUND_SERVICE` & `FOREGROUND_SERVICE_LOCATION` | Prevents Android OS from killing background monitoring worker processes |
+| `SYSTEM_ALERT_WINDOW` | Displays immediate "Time Limit Reached" blocking overlays over restricted apps |
+| `CAMERA` | QR code scanning during child device onboarding |
+
+---
+
+## 💻 Local Setup & Development Guide
+
+To clone and compile SafeZone in Android Studio:
+
+### 1. Prerequisites:
+- **Android Studio Iguana / Jellyfish / Koala** or newer.
+- **JDK 17** configured in Android Studio.
+- An active **Firebase Project** with Realtime Database and Authentication enabled.
+- A **Google Maps Android API Key**.
+
+### 2. Clone & Open:
+```bash
+git clone https://github.com/Ijlal-Hussaini/Safe-Zone-Kid-Friendly-Internet-and-App-Monitoring.git
+cd Safe-Zone-Kid-Friendly-Internet-and-App-Monitoring
+```
+
+### 3. Firebase Configuration:
+1. Download your `google-services.json` from the Firebase Console.
+2. Place `google-services.json` inside the `app/` root directory:
+   ```
+   Safe-Zone-Kid-Friendly-Internet-and-App-Monitoring/app/google-services.json
+   ```
+
+### 4. Google Maps API Key:
+Add your Google Maps API key into `app/src/main/res/values/strings.xml` or `local.properties`:
+```xml
+<string name="google_maps_key">YOUR_GOOGLE_MAPS_API_KEY</string>
+```
+
+### 5. Build & Run:
+- Select `app` configuration and hit **Run (Shift + F10)** on an emulator or physical device running Android 7.0+.
+
+---
+
+## 👨‍💻 Project Leadership & Attribution
+
+- **Project Lead & Core Developer**: **[Ijlal Hussain](https://github.com/Ijlal-Hussaini)**
+- **Academic Project**: Final Year Project (FYP) — **National University of Modern Languages (NUML), Islamabad**
+- **Degree**: BS in Software Engineering (Graduated with **3.96 / 4.0 CGPA**)
+- **Portfolio**: [https://ijlalhussain.vercel.app/](https://ijlalhussain.vercel.app/)
+- **LinkedIn**: [https://linkedin.com/in/ijlal-hussain786](https://linkedin.com/in/ijlal-hussain786)
+- **Email**: [ijlalhussain.eng@gmail.com](mailto:ijlalhussain.eng@gmail.com)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for full details.
